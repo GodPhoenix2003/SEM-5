@@ -29,7 +29,7 @@
    ```python
    SHOW COLUMNS FROM employee;
    ```
-   ![1690050248905](image/Assignment1/1690050248905.png)
+   ![1690053270361](5th Sem/DBMS/image/Assignment1/1690053270361.png)
 7. **Write a query to create a table from an existing table with all the fields.**
 
    ```python
