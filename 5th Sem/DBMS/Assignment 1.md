@@ -29,7 +29,8 @@
    ```python
    SHOW COLUMNS FROM employee;
    ```
-   ![1690053270361](5th Sem/DBMS/image/Assignment1/1690053270361.png)
+   ![1690053270361](https://github.com/GodPhoenix2003/3rd-Year-Assignments/assets/100948753/297f0de2-39fa-4e15-b998-7e17cb855982)
+
 7. **Write a query to create a table from an existing table with all the fields.**
 
    ```python
