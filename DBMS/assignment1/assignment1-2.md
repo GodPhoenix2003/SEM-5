@@ -35,7 +35,7 @@
 5. **Write a query to create a table employee with empno, ename, designation and salary.**
 
    ```sql
-   CREATE TABLE employee(empno int(10), ename varchar(20), designation varchar(10), salary int(10));
+   CREATE TABLE employee(empno int(4), ename varchar(20), designation varchar(10), salary int(10));
    ```
 
 ---
@@ -48,7 +48,7 @@
 
    | Field       | Type        | Null | Key | Default | Extra |
    | ----------- | ----------- | ---- | --- | ------- | ----- |
-   | empno       | int(10)     | YES  |     | NULL    |       |
+   | empno       | int(4)      | YES  |     | NULL    |       |
    | ename       | varchar(20) | YES  |     | NULL    |       |
    | designation | varchar(10) | YES  |     | NULL    |       |
    | salary      | int(10)     | YES  |     | NULL    |       |
