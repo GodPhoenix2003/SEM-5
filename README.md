@@ -6,9 +6,11 @@ If anyone copies wrong codes from here, it is their own responsibility.
 
 ## DBMS :card_file_box:
 
-| No. | Link                                |
-| --- | ----------------------------------- |
-| 1.  | [Assignment 1](DBMS/assignment1.md) |
+:question: [Assignment List](https://drive.google.com/file/d/12owZfs5EeMw58lq_VKNcwJEUcSod-PDy/view?usp=drive_link)
+
+| No. | Link                                              |
+| --- | ------------------------------------------------- |
+| 1.  | [Assignment 1](DBMS/assignment1/assignment1-1.md) |
 
 ---
 
@@ -35,6 +37,6 @@ If anyone copies wrong codes from here, it is their own responsibility.
 
 ## Other :bookmark:
 
-- [Academic Calendar](https://drive.google.com/file/d/1-85QKHrjli0XoQrQGbubOU7A0KxBUjb9/view?usp=drive_link)
+- [Academic Calendar](https://drive.google.com/file/d/1-BittjYvI_EQYBLn2YP3bQ3N5OI1IpIN/view?usp=drive_link)
 - [Class Routine](https://drive.google.com/file/d/1-6U9rjHb0cS2KKwiAN1lihlJ4rsYiQJj/view?usp=drive_link)
 - [Syllabus](https://drive.google.com/file/d/1-4bGuNtqcRRObmBklULlb7Z1KkkGlz1h/view?usp=drive_link)

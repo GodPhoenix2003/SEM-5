@@ -14,4 +14,4 @@
 | [regsitered.html](registered.html) |
 | [signed_in.html](signed_in.html)   |
 
-Output [PDF]() (will be updating soon)
+Output [PDF](https://drive.google.com/file/d/180-AXjNiuvO9YLPSwKwS0qst0xmYDjlP/view?usp=drive_link)
