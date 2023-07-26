@@ -29,7 +29,8 @@
    ```sql
    desc employee;
    ```
-   ![1690353761923](image/Assignment1(usingoraclelicesql)/1690353761923.png)
+   ![1690353761923](https://github.com/GodPhoenix2003/3rd-Year-Assignments/assets/100948753/c7396480-32fa-4603-9354-513f22a43b54)
+
 7. **Write a query to create a table from an existing table with all the fieds.**
 
    ```python
