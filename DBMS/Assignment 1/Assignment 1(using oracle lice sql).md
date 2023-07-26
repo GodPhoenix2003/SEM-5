@@ -2,7 +2,7 @@
 
 1. **What is SQL?**
 
-   > Structured Querry Language (SQL) is a programming language is a programming language for storing and processing information in a relational database. A relational database stores information in a tabular format, with rows and columns representing different data attributes an the various relationships between the data values.
+   > Structured Querry Language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in a tabular format, with rows and columns representing different data attributes an the various relationships between the data values.
    >
 2. **Explain several parts of SQL.**
 
