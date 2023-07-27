@@ -12,10 +12,10 @@
 
 2. **Explain several parts of SQL.**
 
-   > The 3 major components of SQL are :-
+   > The 3 major components of SQL are:-
    >
    > 1. DDL - Data Definition Language
-   > 2. DML - Data Modification/Manupulation Language
+   > 2. DML - Data Modification/Manipulation Language
    > 3. DCL - Data Control Language
 
 ---
@@ -28,11 +28,11 @@
 
 4. **Difference between `Desc <table name>` & `select * from <table name>`.**
 
-   > The `Desc <table name>` command gives the complete information about the table, whereas, `select \* from <table name>` will select all the rows and columns from the table.
+   > The `Desc <table name>` command gives the complete information about the table, whereas, `select * from <table name>` will select all the rows and columns from the table.
 
 ---
 
-5. **Write a query to create a table employee with empno, ename, designation and salary.**
+5. **Write a query to create a table employee with empno, ename, designation, and salary.**
 
    ```sql
    CREATE TABLE employee(empno number(4), ename varchar2(20), designation varchar2(10), salary number(10));
@@ -55,7 +55,7 @@
 
 ---
 
-7. **Write a query to create a table from an existing table with all the fieds.**
+7. **Write a query to create a table from an existing table with all the fields.**
 
    ```sql
    CREATE TABLE newemployee AS SELECT * FROM employee;
@@ -63,7 +63,7 @@
 
 ---
 
-8. **Write a query to create table from an existing table with selected fields.**
+8. **Write a query to create a table from an existing table with selected fields.**
 
    ```sql
    CREATE TABLE newempoyee1 AS SELECT empno, salary FROM employee;
