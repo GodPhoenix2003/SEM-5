@@ -14,7 +14,7 @@
 
    > The 3 major components of SQL are :-
    >
-   > 1. DDL - Data Definition Lnaguage
+   > 1. DDL - Data Definition Language
    > 2. DML - Data Modification/Manupulation Language
    > 3. DCL - Data Control Language
 
