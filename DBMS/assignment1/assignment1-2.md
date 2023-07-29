@@ -15,7 +15,7 @@
    > The 3 major components of SQL are :-
    >
    > 1. DDL - Data Definition Language
-   > 2. DML - Data Modification/Manupulation Language
+   > 2. DML - Data Modification/Manipulation Language
    > 3. DCL - Data Control Language
 
 ---
@@ -32,7 +32,7 @@
 
 ---
 
-5. **Write a query to create a table employee with empno, ename, designation and salary.**
+5. **Write a query to create a table employee with empno, ename, designation, and salary.**
 
    ```sql
    CREATE TABLE employee(empno int(4), ename varchar(20), designation varchar(10), salary int(10));
