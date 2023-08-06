@@ -56,7 +56,8 @@
     ```
 12. **Insert the following rows in ‘loc’ table.**
 
-    ![1690916010510](image/assignment2/1690916010510.png)
+   ![1690916010510](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/441bb071-3b40-4ad3-ad94-3744ad25d6e2)
+ 
 
     ```python
     INSERT INTO loc VALUES (1, 'Kolkata');
@@ -74,7 +75,8 @@
     ```
 15. **Insert the following rows in the department table:**
 
-    ![1691085372942](image/assignment2/1691085372942.png)
+    ![1691085372942](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/e8444227-57e4-49b0-88ec-9f797e96b3bc)
+
 
     ```python
     INSERT INTO department VALUES('Sales', 'Kol', 4);
