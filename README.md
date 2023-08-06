@@ -11,6 +11,7 @@ If anyone copies wrong codes from here, it is their own responsibility.
 | No. | Link                                              |
 | --- | ------------------------------------------------- |
 | 1.  | [Assignment 1](DBMS/assignment1/assignment1-1.md) |
+| 2.  | [Assignment 2](DBMS/assignment2.md)               |
 
 ---
 
