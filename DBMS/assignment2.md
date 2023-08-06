@@ -87,7 +87,8 @@
     ```
 16. **Insert the following rows in the employee table:**
 
-    ![1691085402163](image/assignment2/1691085402163.png)
+    ![1691085402163](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/879bab82-6693-467b-ac25-b980c9f3f191)
+
 
     ```python
     INSERT INTO employee VALUES(1, 'Arun', 'Khan', 'Manager', 90000, 'Production', NULL, NULL, to_date('04-01-1998', 'dd-mm-yyyy'));
@@ -103,27 +104,30 @@
     INSERT INTO employee VALUES(11, 'Bobby', 'Deol', 'Engineer', 35000, 'R&D', NULL, 8, to_date('17-10-2017', 'dd-mm-yyyy'));
     INSERT INTO employee VALUES(12, 'Aamir', 'Khan', 'Salesman', 15000, 'Marketing', 5000, 2, to_date('11-01-2013', 'dd-mm-yyyy'));
     ```
-17. **Show the values of departmental table.**
+16. **Show the values of departmental table.**
 
     ```python
     SELECT * FROM department;
     ```
-    ![1691232384035](image/assignment2/1691232384035.png)
-18. **Select the department names and their locations.**
+    ![1691232384035](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/be105135-17d9-49e3-ba64-31330f295069)
+
+17. **Select the department names and their locations.**
 
     ```python
     SELECT d_name, d_loc FROM department;
     ```
-    ![1691234341609](image/assignment2/1691234341609.png)
-19. **Show the employees f_name , l_name , salary and the salary after 1000rs. Bonus.**
+    ![1691234341609](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/c5cd89ba-2f0b-4d1b-8dc1-95779dbf4229)
+
+18. **Show the employees f_name , l_name , salary and the salary after 1000rs. Bonus.**
 
     ```python
     ALTER TABLE employee ADD sal_after_bonus number(10);
     UPDATE employee SET sal_after_bonus = salary + 1000;
     SELECT f_name, l_name, salary, sal_after_bonus FROM employee;
     ```
-    ![1691235502904](image/assignment2/1691235502904.png)
-20. **Show the employees annual salary with a 1000rs. Yearly bonus and the annual salary with a 100rs. Monthly bonus.**
+    ![1691235502904](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/aeb6c433-9bfc-4d8e-aa16-4a33be2b0e07)
+
+19. **Show the employees annual salary with a 1000rs. Yearly bonus and the annual salary with a 100rs. Monthly bonus.**
 
     ```python
     ALTER TABLE employee ADD (annual_sal_yearly_bonus number(10), annual_sal_monthly_bonus number(10));
@@ -131,8 +135,9 @@
     UPDATE employee SET annual_sal_monthly_bonus = (salary*12) + (100*12);
     SELECT annual_sal_yearly_bonus, annual_sal_monthly_bonus FROM employee;
     ```
-    ![1691241867629](image/assignment2/1691241867629.png)
-21. **Show f_name as NAME and annual salary as ANNSAL from the employee table.**
+    ![1691241867629](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/a42c9ff3-67ad-4680-a64b-b8570e4aea9b)
+
+20. **Show f_name as NAME and annual salary as ANNSAL from the employee table.**
 
     ```python
     ALTER TABLE employee RENAME COLUMN f_name TO NAME;
@@ -140,8 +145,9 @@
     UPDATE employee SET ANNSAL = salary * 12;
     SELECT NAME, ANNSAL FROM employee;
     ```
-    ![1691313870777](image/assignment2/1691313870777.png)
-22. **Show the l_name as Last AND 100rs. Incremented salary as NewSal.**
+    ![1691313870777](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/bb623f5c-892f-4711-bf39-b06534589df8)
+
+21. **Show the l_name as Last AND 100rs. Incremented salary as NewSal.**
 
     ```python
     ALTER TABLE employee RENAME COLUMN l_name TO Last;
@@ -149,28 +155,32 @@
     UPDATE employee SET NewSal = salary + 100;
     SELECT Last, NewSal FROM employee;
     ```
-    ![1691321452590](image/assignment2/1691321452590.png)
-23. **Show the emp_id, f_name, l_name, job_type of the employee getting highest salary.**
+    ![1691321452590](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/3f1bb515-02cd-40aa-87c9-ffb1750c851d)
+
+22. **Show the emp_id, f_name, l_name, job_type of the employee getting highest salary.**
 
     ```python
     ALTER TABLE employee RENAME COLUMN NAME TO f_name;
     ALTER TABLE employee RENAME COLUMN Last TO l_name;
     SELECT emp_id, f_name, l_name, job_type, salary FROM employee ORDER BY salary DESC FETCH FIRST 1 ROW ONLY;
     ```
-    ![1691333102638](image/assignment2/1691333102638.png)
-24. **Show the emp_id, f_name, l_name, job_type of the employee getting minimum salary.**
+    ![1691333102638](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/884ae992-5a9e-48ce-bafb-e84449c5d592)
+
+23. **Show the emp_id, f_name, l_name, job_type of the employee getting minimum salary.**
 
     ```python
     SELECT emp_id, f_name, l_name, job_type, salary FROM employee ORDER BY salary FETCH FIRST 1 ROW ONLY;
     ```
-    ![1691334483134](image/assignment2/1691334483134.png)
-25. **Show the average salary of employees in the employee table.**
+    ![1691334483134](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/89f76d9e-7b92-4fcf-ab3f-61a506840453)
+
+24. **Show the average salary of employees in the employee table.**
 
     ```python
     SELECT AVG(salary) AS average_salary FROM employee;
     ```
-    ![1691335833610](image/assignment2/1691335833610.png)
-26. **Consider the Insurance database given below. The primary keys are underlined and the data types are specified:
+    ![1691335833610](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/d0b993cd-bf35-4a53-b2d1-68ecf0ae54cc)
+
+25. **Consider the Insurance database given below. The primary keys are underlined and the data types are specified:
     PERSON (driver-id: string, name: string, address: string) CAR (Regno:string,model:string,year:int)
     ACCIDENT (report-number:int,date:date,location:string) OWNS (driver-id:string,regno:string)
     PARTICIPATED (driver-id:string,regno:string,report-number:int,damage-amount:int)
