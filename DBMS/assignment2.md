@@ -2,11 +2,15 @@
 
 (using Oracle Live SQL)
 
+---
+
 1. **Create a table employee with attributes emp_id, f_name, l_name, job_type, salary, dept, commission, manager_id.**
 
    ```sql
    CREATE TABLE employee(emp_id number(10), f_name varchar2(10), l_name varchar2(10), job_type varchar2(10), salary number(10), dept varchar2(10), commission number(10), manager_id varchar2(10));
    ```
+
+---
 
 2. **Make emp_id as the primary key of employee table.**
 
@@ -14,17 +18,23 @@
    ALTER TABLE employee ADD PRIMARY KEY (emp_id);
    ```
 
+---
+
 3. **Make f_name and salary NOT NULL type.**
 
    ```sql
    ALTER TABLE employee MODIFY(f_name VARCHAR2(10) NOT NULL, salary NUMBER(10) NOT NULL);
    ```
 
+---
+
 4. **Add a column date_of_joining in the employee table.**
 
    ```sql
    ALTER TABLE employee ADD date_of_joining DATE;
    ```
+
+---
 
 5. **Create a table department with attribute d_name, d_loc and HOD_id where d_name is primary key.**
 
@@ -33,11 +43,15 @@
    ALTER TABLE department ADD PRIMARY KEY(d_name);
    ```
 
+---
+
 6. **Create a table location with attributes loc_id, city and contact_no.**
 
    ```sql
    CREATE TABLE location(loc_id number(10), city varchar2(10), contact_no number(10));
    ```
+
+---
 
 7. **Enhance the size of the ‘city’ attribute by 5, in the location table.**
 
@@ -45,24 +59,39 @@
    ALTER TABLE location MODIFY city varchar2(15);
    ```
 
+---
+
 8. **Delete the contact_no attribute from the location table.**
 
    ```sql
    ALTER TABLE location DROP COLUMN contact_no;
    ```
 
+---
+
 9. **Make the department attribute of the employee table its foreign key referencing the department table.**
+
+   ```sql
+   ALTER TABLE employee ADD FOREIGN KEY (dept) REFERENCES department(d_name);
+   ```
+
+---
+
 10. **Rename the city attribute to ‘address’ in the location table.**
 
     ```sql
     ALTER TABLE location RENAME COLUMN city TO address;
     ```
 
+---
+
 11. **Rename the location table name to ‘loc’.**
 
     ```sql
     ALTER TABLE location RENAME TO loc;
     ```
+
+---
 
 12. **Insert the following rows in ‘loc’ table.**
 
@@ -76,17 +105,23 @@
     INSERT INTO loc VALUES (2, 'Mumbai');
     ```
 
+---
+
 13. **Truncate the table ‘loc’.**
 
     ```sql
     TRUNCATE TABLE loc;
     ```
 
+---
+
 14. **Drop the table ‘loc’.**
 
     ```sql
     DROP TABLE loc;
     ```
+
+---
 
 15. **Insert the following rows in the department table:**
 
@@ -105,6 +140,8 @@
     INSERT INTO department VALUES('Marketing', 'Kol', 2);
     INSERT INTO department VALUES('R&D', 'Marketing', 8);
     ```
+
+---
 
 16. **Insert the following rows in the employee table:**
 
@@ -138,6 +175,8 @@
     INSERT INTO employee VALUES(12, 'Aamir', 'Khan', 'Salesman', 15000, 'Marketing', 5000, 2, to_date('11-01-2013', 'dd-mm-yyyy'));
     ```
 
+---
+
 17. **Show the values of departmental table.**
 
     ```sql
@@ -152,6 +191,8 @@
     | Marketing  | Kol       | 2      |
     | R&D        | Marketing | 8      |
 
+---
+
 18. **Select the department names and their locations.**
 
     ```sql
@@ -165,6 +206,8 @@
     | Production | Kol       |
     | Marketing  | Kol       |
     | R&D        | Marketing |
+
+---
 
 19. **Show the employees f_name , l_name , salary and the salary after 1000rs. Bonus.**
 
@@ -188,6 +231,8 @@
     | Sunny   | Deol   | 20000  | 21000           |
     | Bobby   | Deol   | 35000  | 36000           |
     | Aamir   | Khan   | 15000  | 16000           |
+
+---
 
 20. **Show the employees annual salary with a 1000rs. Yearly bonus and the annual salary with a 100rs. Monthly bonus.**
 
@@ -213,6 +258,8 @@
     |         421000          |          421200          |
     |         181000          |          181200          |
 
+---
+
 21. **Show f_name as NAME and annual salary as ANNSAL from the employee table.**
 
     ```sql
@@ -236,6 +283,8 @@
     | Sunny   | 240000  |
     | Bobby   | 420000  |
     | Aamir   | 180000  |
+
+---
 
 22. **Show the l_name as Last AND 100rs. Incremented salary as NewSal.**
 
@@ -261,6 +310,8 @@
     | Deol   | 35100  |
     | Khan   | 15100  |
 
+---
+
 23. **Show the emp_id, f_name, l_name, job_type of the employee getting highest salary.**
 
     ```sql
@@ -273,6 +324,8 @@
     | ------ | ------ | ------ | -------- | ------ |
     | 1      | Arun   | Khan   | Manager  | 90000  |
 
+---
+
 24. **Show the emp_id, f_name, l_name, job_type of the employee getting minimum salary.**
 
     ```sql
@@ -282,6 +335,8 @@
     | EMP_ID | F_NAME | L_NAME | JOB_TYPE | SALARY |
     | ------ | ------ | ------ | -------- | ------ |
     | 12     | Aamir  | Khan   | Salesman | 15000  |
+
+---
 
 25. **Show the average salary of employees in the employee table.**
 
@@ -293,6 +348,8 @@
     | -------------- |
     | 52500          |
 
+---
+
 26. Consider the Insurance database given below. The primary keys are underlined and the data types are specified:
 
     PERSON (driver-id: string, name: string, address: string) <br>
@@ -302,8 +359,94 @@
     PARTICIPATED (driver-id:string,regno:string,report-number:int,damage-amount:int)
 
     i. Create the above tables by properly specifying the primary keys and the foreign keys. <br>
+
+    ```sql
+    CREATE TABLE PERSON (
+    driver_id VARCHAR2(20) PRIMARY KEY,
+    name VARCHAR2(50),
+    address VARCHAR2(100)
+    );
+
+    CREATE TABLE CAR (
+        regno VARCHAR2(20) PRIMARY KEY,
+        model VARCHAR2(50),
+        year NUMBER
+    );
+
+    CREATE TABLE ACCIDENT (
+        report_number NUMBER PRIMARY KEY,
+        date DATE,
+        location VARCHAR2(100)
+    );
+
+    CREATE TABLE OWNS (
+        driver_id VARCHAR2(20),
+        regno VARCHAR2(20),
+        PRIMARY KEY (driver_id, regno),
+        FOREIGN KEY (driver_id) REFERENCES PERSON(driver_id),
+        FOREIGN KEY (regno) REFERENCES CAR(regno)
+    );
+
+    CREATE TABLE PARTICIPATED (
+        driver_id VARCHAR2(20),
+        regno VARCHAR2(20),
+        report_number NUMBER,
+        damage_amount NUMBER,
+        PRIMARY KEY (driver_id, regno, report_number),
+        FOREIGN KEY (driver_id, regno) REFERENCES OWNS(driver_id, regno),
+        FOREIGN KEY (report_number) REFERENCES ACCIDENT(report_number)
+    );
+    ```
+
     ii. Enter atleast five tuples for each relation.<br>
+
+    ```sql
+    INSERT INTO PERSON VALUES ('D001', 'John Smith', '123 Main St');
+    INSERT INTO PERSON VALUES ('D002', 'Jane Doe', '456 Elm St');
+
+    INSERT INTO CAR VALUES ('C001', 'Toyota Camry', 2020);
+    INSERT INTO CAR VALUES ('C002', 'Honda Civic', 2018);
+
+    INSERT INTO ACCIDENT VALUES (12, TO_DATE('2023-08-01', 'YYYY-MM-DD'), 'Intersection A');
+    INSERT INTO ACCIDENT VALUES (15, TO_DATE('2023-07-20', 'YYYY-MM-DD'), 'Highway B');
+
+    INSERT INTO OWNS VALUES ('D001', 'C001');
+    INSERT INTO OWNS VALUES ('D002', 'C002');
+
+    INSERT INTO PARTICIPATED VALUES ('D001', 'C001', 12, 1500);
+    INSERT INTO PARTICIPATED VALUES ('D002', 'C002', 15, 3000);
+    ```
+
     iii. Demonstrate how you a. Update the damage amount for the car with a specific regno in accident with report number 12 to 25000 b. Add a new accident to the database. <br>
+
+    ```sql
+    UPDATE PARTICIPATED
+    SET damage_amount = 25000
+    WHERE regno = 'C001' AND report_number = 12;
+
+    INSERT INTO ACCIDENT VALUES (20, TO_DATE('2023-08-10', 'YYYY-MM-DD'), 'Street C');
+    ```
+
     iv. Find the total number of people who owned cars that were involved in accidents in 2006.<br>
+
+    ```sql
+    SELECT COUNT(DISTINCT driver_id) AS total_owners
+    FROM OWNS
+    WHERE regno IN (
+        SELECT regno
+        FROM PARTICIPATED p
+        JOIN ACCIDENT a ON p.report_number = a.report_number
+        WHERE EXTRACT(YEAR FROM a.date) = 2006
+    );
+
+    ```
+
     v. Find the number of accidents in which cars belonging to a specific model were
     involved.
+
+    ```sql
+    SELECT COUNT(*) AS num_accidents
+    FROM PARTICIPATED p
+    JOIN CAR c ON p.regno = c.regno
+    WHERE c.model = 'Toyota Camry';
+    ```
