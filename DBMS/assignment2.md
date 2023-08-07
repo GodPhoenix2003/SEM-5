@@ -11,7 +11,7 @@
 2. **Make emp_id as the primary key of employee table.**
 
    ```sql
-   ALTER TABLE employee ADD CONSTRAINT pk_employee PRIMARY KEY (emp_id);
+   ALTER TABLE employee ADD PRIMARY KEY (emp_id);
    ```
 
 3. **Make f_name and salary NOT NULL type.**
@@ -30,7 +30,7 @@
 
    ```sql
    CREATE TABLE department(d_name varchar2(10), d_loc varchar2(50), HOD_id number(10));
-   ALTER TABLE department ADD CONSTRAINT pk_hod PRIMARY KEY(d_name);
+   ALTER TABLE department ADD PRIMARY KEY(d_name);
    ```
 
 6. **Create a table location with attributes loc_id, city and contact_no.**
