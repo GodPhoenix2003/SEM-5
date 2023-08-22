@@ -5,7 +5,7 @@
 1. **Create a table employee with attributes emp_id, f_name, l_name, job_type, salary, dept, commission, manager_id.**
 
    ```python
-   CREATE TABLE employee(emp_id number(10), f_name varchar2(10), l_name varchar2(10), job_type varchar2(10), salary number(10), dept varchar2(10), commission number(10), manager_id varchar2(10));
+   CREATE TABLE employee(emp_id number(10), f_name varchar2(10), l_name varchar2(10), job_type varchar2(10), salary number(10), dept varchar2(10), commission number(10), manager_id varchar2(10), DOJ DATE);
    ```
 2. **Make emp_id as the primary key of employee table.**
 
