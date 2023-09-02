@@ -122,6 +122,7 @@
    ![8](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/63a123d0-4ee4-44fc-87e2-2c8a4cb37d5a)
 
 9. **Determine the tax for each employee in production department based on the monthly salary. The tax rate are as per the following data:**
+   ![9q](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/a10cbd2e-47a2-4f80-9844-8cd21fb0f3dc)
 
    ```
    CREATE TABLE production_dept(emp_id number, salary number(10));
