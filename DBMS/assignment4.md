@@ -9,7 +9,8 @@
    INSERT INTO employee VALUES(1, 'Sagnik Chatterjee', 1234567890);
    SELECT name AS original_name, UPPER(name) AS uppercase_name, LOWER(name) AS lowercase_name FROM employee;
    ```
-   ![1](image/assignment4/1.png)
+   ![1](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/0eb9f091-3063-41f6-8cef-f9ce25ad887c)
+
 2. **Show the use of concat, instr and length function.**
 
    ```
@@ -17,7 +18,8 @@
    INSERT INTO items VALUES('Reynolds', 'Pen');
    SELECT name, det, CONCAT(name, det), INSTR(name, 'old'), LENGTH(CONCAT(name, det)) AS total_length FROM items;
    ```
-   ![2](image/assignment4/2.png)
+   ![2](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/191ba3da-5313-4160-9230-a707ce056a46)
+
 3. **Show the use of the following functions on numeric values:
    a. Sqrt()
    b. Power()
@@ -40,8 +42,9 @@
    SELECT num1, num2, num3, SQRT(num1), POWER(num1, num2), CEIL(num3), ROUND(num3), EXP(num2), MOD(num1, num2) FROM numbers;
    SELECT MAX(num1), MIN(num2), AVG(num1), COUNT(num2) FROM numbers;
    ```
-   ![3a](image/assignment4/3a.png)
-   ![3b](image/assignment4/3b.png)
+   ![3a](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/ed1724c0-e64d-4f19-9169-0e12c468f645)
+   ![3b](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/507b2dd2-d2f4-4d2b-853a-48d870bff300)
+
 4. **Solve the following queries:
    a. Find the ceiling and floor value of 14.887.
    b. Find out the round-off 17.49989.
@@ -52,7 +55,8 @@
    INSERT into num VALUES(1);
    SELECT CEIL(14.887), FLOOR(14.887), ROUND(117.49989), POWER(8, 7) FROM num;
    ```
-   ![4](image/assignment4/4.png)
+   ![4](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/788c781f-7be5-466d-b69c-1dffcee5690a)
+
 5. **Show the current date.**
 
    ```
@@ -60,7 +64,8 @@
    INSERT INTO dates VALUES(to_date('01-01-1111', 'dd-mm-yyyy'));
    SELECT SYSDATE AS current_date FROM dates;
    ```
-   ![5](image/assignment4/5.png)
+   ![5](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/77b73f22-e81f-41f3-902c-54172649033c)
+
 6. **Find the total experience of the employees in weeks who works in Sales department.**
 
    ```
@@ -73,7 +78,8 @@
    UPDATE employees SET total_working_weeks = ROUND((SYSDATE - doj)/7, 2);
    SELECT * FROM employees WHERE dept = 'Sales';
    ```
-   ![6](image/assignment4/6.png)
+   ![6](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/1729d4a1-6bf3-49ff-a1c2-bf0ec425575b)
+
 7. **Display the use of the following functions on date:
    a. Months_between
    b. Add_months
@@ -93,9 +99,10 @@
    SELECT d1, ROUND(d1, 'DD'), ROUND(d1, 'MM'), ROUND(d1, 'YYYY') FROM dates;
    SELECT d1, TRUNC(d1, 'DAY'), TRUNC(d1, 'MONTH'), TRUNC(d1, 'YEAR') FROM dates;
    ```
-   ![7a](image/assignment4/7a.png)
-   ![7b](image/assignment4/7b.png)
-   ![7c](image/assignment4/7c.png)
+   ![7a](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/4f96c670-3e98-4322-8690-2d06a88af22f)
+   ![7b](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/3dd5f837-48a8-4fe5-8cc7-73de67746959)
+   ![7c](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/ca316eba-4850-4af3-a682-e204a14a196a)
+
 8. **Show the employee details with a revised salary. The salary is incremented in the following way:
    a. 10% for sales department
    b. 20% for marketing department
@@ -112,7 +119,8 @@
    UPDATE employee SET revised_salary = salary WHERE dept != 'Sales' and dept != 'Marketing';
    SELECT * FROM employee;
    ```
-   ![8](image/assignment4/8.png)
+   ![8](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/63a123d0-4ee4-44fc-87e2-2c8a4cb37d5a)
+
 9. **Determine the tax for each employee in production department based on the monthly salary. The tax rate are as per the following data:**
 
    ```
@@ -130,7 +138,8 @@
    UPDATE production_dept SET tax = salary * 0.45 WHERE salary >= 80000;
    SELECT * FROM production_dept;
    ```
-   ![9](image/assignment4/9.png)
+   ![9](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/03a352a8-fce7-4134-8299-817853fa62e9)
+
 10. **Find the Cartesian product between Employee and Department table.**
 
     ```
@@ -144,7 +153,8 @@
     INSERT INTO department VALUES(3, 'Sales');
     SELECT e.emp_id, e.salary, d.dept_id, d.dept_name FROM employee e CROSS JOIN department d WHERE e.dept_id = d.dept_id;
     ```
-    ![10](image/assignment4/10.png)
+    ![10](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/7740c930-24ea-405b-8cdb-a3c9c4f994c6)
+
 11. **Show the employee names and the respective department location.**
 
     ```
@@ -158,7 +168,8 @@
     INSERT INTO department VALUES(3, 'Sales', 'Siliguri');
     SELECT e.emp_name, e.dept_id, d.dept_name, d.dept_loc FROM employee e CROSS JOIN department d WHERE e.dept_id = d.dept_id;
     ```
-    ![11](image/assignment4/11.png)
+    ![11](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/6c698db0-7e3c-464b-b25e-8d59500d302c)
+
 12. **Give an example of the following joins considering employee and department tables.
     a. Natural join
     b. Inner join
@@ -181,28 +192,32 @@
     ```
     SELECT * FROM employee NATURAL JOIN department;
     ```
-    ![12a](image/assignment4/12a.png)
+    ![12a](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/007b619d-257a-420f-80bf-6357935fa9be)
+
     (b)
 
     ```
     SELECT * FROM employee e INNER JOIN department d ON e.dept_id = d.dept_id;
     ```
-    ![12b](image/assignment4/12b.png)
+    ![12b](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/b3d431ff-5a25-40d6-8e71-d77a8f622e14)
+
     (c)
 
     ```
     SELECT * FROM employee e LEFT OUTER JOIN department d ON e.dept_id = d.dept_id;
     ```
-    ![12c](image/assignment4/12c.png)
+    ![12c](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/de810656-70a2-43e7-a192-0f2fd76654b8)
+
     (d)
 
     ```
     SELECT * FROM employee e RIGHT OUTER JOIN department d ON e.dept_id = d.dept_id;
     ```
-    ![12d](image/assignment4/12d.png)
+    ![12d](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/f5efb020-e1d2-41f1-838a-6b13598d4b33)
+
     (e)
 
     ```
     SELECT * FROM employee e FULL OUTER JOIN department d ON e.dept_id = d.dept_id;
     ```
-    ![12e](image/assignment4/12e.png)
+    ![12e](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/6353ea28-3230-4c0f-b967-0f2d8a4ec80b)
