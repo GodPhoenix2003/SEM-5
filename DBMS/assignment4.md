@@ -122,6 +122,7 @@
    ![8](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/63a123d0-4ee4-44fc-87e2-2c8a4cb37d5a)
 
 9. **Determine the tax for each employee in production department based on the monthly salary. The tax rate are as per the following data:**
+
    ![9q](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/a10cbd2e-47a2-4f80-9844-8cd21fb0f3dc)
 
    ```
@@ -141,7 +142,7 @@
    ```
    ![9](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/03a352a8-fce7-4134-8299-817853fa62e9)
 
-10. **Find the Cartesian product between Employee and Department table.**
+11. **Find the Cartesian product between Employee and Department table.**
 
     ```
     CREATE TABLE employee(emp_id number, salary number(10), dept_id number);
@@ -156,7 +157,7 @@
     ```
     ![10](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/7740c930-24ea-405b-8cdb-a3c9c4f994c6)
 
-11. **Show the employee names and the respective department location.**
+12. **Show the employee names and the respective department location.**
 
     ```
     CREATE TABLE employee(emp_name varchar2(50), dept_id number);
@@ -171,7 +172,7 @@
     ```
     ![11](https://github.com/GodPhoenix2003/SEM-5/assets/100948753/6c698db0-7e3c-464b-b25e-8d59500d302c)
 
-12. **Give an example of the following joins considering employee and department tables.
+13. **Give an example of the following joins considering employee and department tables.
     a. Natural join
     b. Inner join
     c. Left outer join
