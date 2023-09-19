@@ -85,6 +85,7 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
    ```
    ![1695113446063](image/assignment5/1695113446063.png)
 7. **Create ‘Job_Grades’ table and insert the following values:**
+
    ![1695113462858](image/assignment5/1695113462858.png)
 
    ```
