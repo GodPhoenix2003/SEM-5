@@ -85,13 +85,13 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
    ```
    ![1695113446063](image/assignment5/1695113446063.png)
 7. **Create ‘Job_Grades’ table and insert the following values:**
+
    ![1695113462858](image/assignment5/1695113462858.png)
 
    ```
-   CREATE TABLE Job_Grades(grade varchar2(1), lowest_sal number(6), highest_sal number(10));
+   CREATE TABLE Job_Grades(grade varchar2(1), lowest_sal number(10), highest_sal number(10));
    INSERT INTO Job_Grades VALUES('A', 10000, 24999);
    INSERT INTO Job_Grades VALUES('B', 25000, 49999);
    INSERT INTO Job_Grades VALUES('C', 50000, 100000);
-   SELECT * FROM Job_Grades;
    ```
    ![1695113471016](image/assignment5/1695113471016.png)
