@@ -95,3 +95,4 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
    INSERT INTO Job_Grades VALUES('C', 50000, 100000);
    ```
    ![1695113471016](image/assignment5/1695113471016.png)
+8. Display the employee names with their respective job grades and salary.
