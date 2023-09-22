@@ -95,4 +95,21 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
    INSERT INTO Job_Grades VALUES('C', 50000, 100000);
    ```
    ![1695113471016](image/assignment5/1695113471016.png)
-8. Display the employee names with their respective job grades and salary.
+8. **Display the employee names with their respective job grades and salary.**
+
+   ```
+   ALTER TABLE employee ADD grades varchar2(1);
+   UPDATE employee SET grades = 'A' WHERE salary>=10000 and salary<=24999;
+   UPDATE employee SET grades = 'B' WHERE salary>=25000 and salary<=49999;
+   UPDATE employee SET grades = 'C' WHERE salary>=50000 and salary<=100000;
+   SELECT f_name, l_name, salary, grades FROM employee;
+   ```
+   ![1695478042295](image/assignment5/1695478042295.png)
+9. **Insert two rows in Employee table having ‘NULL’ values in dept field.**
+
+   ```
+   INSERT INTO employee VALUES(13, 'Varun', 'Verma', 'Engineer', 65000, NULL, NULL, NULL, to_date('27-11-2007', 'dd-mm-yyyy'), 'C');
+   INSERT INTO employee VALUES(14, 'Ishika', 'Dutta', 'Engineer', 75000, NULL, NULL, NULL, to_date('31-08-2003', 'dd-mm-yyyy'), 'C');
+   SELECT * FROM employee WHERE emp_id>12;
+   ```
+   ![1695492337611](image/assignment5/1695492337611.png)
