@@ -113,3 +113,11 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
    SELECT * FROM employee WHERE emp_id>12;
    ```
    ![1695492337611](image/assignment5/1695492337611.png)
+10. **Insert two rows in Department table.**
+
+    ```
+    INSERT INTO department VALUES('Finance', 'Kol', 3);
+    INSERT INTO department VALUES('Admin', 'Delhi', 5);
+    SELECT * FROM department;
+    ```
+    ![1695586394516](image/assignment5/1695586394516.png)
