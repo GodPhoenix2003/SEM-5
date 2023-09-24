@@ -121,3 +121,9 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
     SELECT * FROM department;
     ```
     ![1695586394516](image/assignment5/1695586394516.png)
+11. Perform the following joins considering Employee and Department tables.
+    a. Natural join
+    b. Inner join
+    c. Left outer join
+    d. Right outer join
+    e. Full outer join
