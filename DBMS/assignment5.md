@@ -127,6 +127,7 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
     c. Left outer join
     d. Right outer join
     e. Full outer join**
+    
     (b)
 
     ```
