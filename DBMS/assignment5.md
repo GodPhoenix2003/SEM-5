@@ -121,9 +121,33 @@ INSERT INTO department VALUES('R&D', 'Delhi', 8);
     SELECT * FROM department;
     ```
     ![1695586394516](image/assignment5/1695586394516.png)
-11. Perform the following joins considering Employee and Department tables.
+11. **Perform the following joins considering Employee and Department tables.
     a. Natural join
     b. Inner join
     c. Left outer join
     d. Right outer join
-    e. Full outer join
+    e. Full outer join**
+    (b)
+
+    ```
+    SELECT * FROM employee e INNER JOIN department d ON e.manager_id=d.hod_id;
+    ```
+    ![1695635903020](image/assignment5/1695635903020.png)
+    (c)
+
+    ```
+    SELECT * FROM employee e LEFT OUTER JOIN department d ON e.manager_id=d.hod_id;
+    ```
+    ![1695635995292](image/assignment5/1695635995292.png)
+    (d)
+
+    ```
+    SELECT * FROM employee e RIGHT OUTER JOIN department d ON e.manager_id=d.hod_id;
+    ```
+    ![1695636018982](image/assignment5/1695636018982.png)
+    (e)
+
+    ```
+    SELECT * FROM employee e FULL OUTER JOIN department d ON e.manager_id=d.hod_id;
+    ```
+    ![1695636102573](image/assignment5/1695636102573.png)
