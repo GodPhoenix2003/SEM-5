@@ -55,4 +55,46 @@ INSERT INTO Title VALUES(3,'Lead','2016-06-11 00:00:00');
    SELECT SUBSTRING(first_name,1,3) FROM Worker;
    ```
    ![1696484038933](image/assignment6/1696484038933.png)
-3.
+3. **Write An SQL Query To Find The Position Of The Alphabet (‘A’) In The First Name Column ‘Amitabh’ From Worker Table.**
+
+   ```
+   SELECT INSTR(first_name, 'A') AS Position_of_A FROM Worker WHERE First_Name = 'Amitabh';
+   ```
+   ![1696711047577](image/assignment6/1696711047577.png)
+4. **Write An SQL Query To Print The FIRST_NAME And LAST_NAME From Worker Table Into A Single Column COMPLETE_NAME. A Space Char Should Separate Them.**
+
+   ```
+   SELECT CONCAT(first_name, ' ', last_name) AS COMPLETE_NAME FROM Worker;
+   ```
+   ![1696714913249](image/assignment6/1696714913249.png)
+5. **Write An SQL Query To Print All Worker Details From The Worker Table Order By FIRST_NAME Ascending And DEPARTMENT Descending.**
+
+   ```
+   SELECT * FROM Worker ORDER BY first_name ASC, department DESC;
+   ```
+   ![1696718851830](image/assignment6/1696718851830.png)
+6. **Write An SQL Query To Print Details Of The Workers Whose FIRST_NAME Contains ‘A’.**
+
+   ```
+   SELECT * FROM Worker WHERE first_name LIKE '%A%';
+   ```
+   ![1696719928628](image/assignment6/1696719928628.png)
+7. **Write An SQL Query To Print Details Of The Workers Whose FIRST_NAME Ends With ‘A’.**
+
+   ```
+   SELECT * FROM Worker WHERE first_name LIKE '%A';
+   ```
+   ![1696721338770](image/assignment6/1696721338770.png)
+8. **Write An SQL Query To Print Details Of The Workers Whose SALARY Lies Between 100000 And 500000.**
+
+   ```
+   SELECT * FROM Worker WHERE salary BETWEEN 100000 and 500000;
+   ```
+   ![1696722342240](image/assignment6/1696722342240.png)
+9. **Write An SQL Query To Fetch The Count Of Employees Working In The Department ‘Admin’.**
+
+   ```
+   SELECT COUNT(*) AS Admin_Count FROM Worker WHERE department = 'Admin';
+   ```
+   ![1696726268302](image/assignment6/1696726268302.png)
+10.
