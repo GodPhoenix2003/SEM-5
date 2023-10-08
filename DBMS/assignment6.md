@@ -121,3 +121,4 @@ INSERT INTO Title VALUES(3,'Lead','2016-06-11 00:00:00');
     SELECT w.* FROM Worker w LEFT JOIN Bonus b ON w.worker_id = b.worker_ref_id WHERE b.worker_ref_id IS NULL;
     ```
     ![1696741042518](image/assignment6/1696741042518.png)
+14. Write An SQL Query To Show The Top N (Say 10) Records Of A Table.
