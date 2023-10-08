@@ -97,4 +97,27 @@ INSERT INTO Title VALUES(3,'Lead','2016-06-11 00:00:00');
    SELECT COUNT(*) AS Admin_Count FROM Worker WHERE department = 'Admin';
    ```
    ![1696726268302](image/assignment6/1696726268302.png)
-10.
+10. **Write An SQL Query To Fetch The No. Of Workers For Each Department In The Descending Order.**
+
+    ```
+    SELECT department, COUNT(*) AS worker_count FROM Worker GROUP BY department ORDER BY worker_count DESC;
+    ```
+    ![1696730326408](image/assignment6/1696730326408.png)
+11. **Write An SQL Query To Print Details Of The Workers Who Are Also Managers.**
+
+    ```
+    SELECT w.* FROM Worker w CROSS JOIN Title t WHERE w.worker_id=t.worker_ref_id and t.worker_title='Manager';
+    ```
+    ![1696734742104](image/assignment6/1696734742104.png)
+12. **Write An SQL Query To Show Only Odd Rows From A Table.**
+
+    ```
+    SELECT * FROM Worker WHERE worker_id%2!=0;
+    ```
+    ![1696738514039](image/assignment6/1696738514039.png)
+13. **Write An SQL Query To Show Records From One Table That Another Table Does Not Have.**
+
+    ```
+    SELECT w.* FROM Worker w LEFT JOIN Bonus b ON w.worker_id = b.worker_ref_id WHERE b.worker_ref_id IS NULL;
+    ```
+    ![1696741042518](image/assignment6/1696741042518.png)
